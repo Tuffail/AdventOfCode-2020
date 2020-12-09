@@ -1,0 +1,36 @@
+{
+  "extends": "airbnb",
+  "overrides": [
+    {
+      "files": ["**/*.spec.js*", "**/*.test.js*", "**/__mocks__/**/*"],
+      "extends": ["plugin:jest-formatting/recommended"],
+      "plugins": ["jest"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "jest/consistent-test-it": "error",
+        "jest/expect-expect": [
+          "error",
+          {
+            "assertFunctionNames": ["expect"]
+          }
+        ],
+        "jest/no-alias-methods": "error",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/no-jasmine-globals": "warn",
+        "jest/no-jest-import": "warn",
+        "jest/prefer-to-be-null": "warn",
+        "jest/prefer-to-be-undefined": "warn",
+        "jest/prefer-to-contain": "warn",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-describe": "warn",
+        "jest/valid-expect-in-promise": "warn",
+        "jest/valid-expect": "error"
+      }
+    }
+  ]
+}
