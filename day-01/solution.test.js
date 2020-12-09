@@ -9,7 +9,7 @@ describe('Day 1 - Part One', () => {
   });
 });
 
-describe('Day 2 - Part One', () => {
+describe('Day 1 - Part Two', () => {
   it('should return correct answer with input', () => {
     const result = problem2(INPUT, 2020);
     expect(result).toBe(241861950);
