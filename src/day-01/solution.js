@@ -1,6 +1,7 @@
-// eslint-disable-next-line import/prefer-default-export
+import { parseInput } from '../helpers/parsers';
+
 export const problem1 = (input, target) => {
-  const values = input.split('\n').map((value) => Number(value));
+  const values = parseInput(input, Number);
   for (let i = 0; i < values.length; i += 1) {
     for (let j = i + 1; j < values.length; j += 1) {
       if (values[i] + values[j] === target) {
@@ -12,7 +13,7 @@ export const problem1 = (input, target) => {
 };
 
 export const problem2 = (input, target) => {
-  const values = input.split('\n').map((value) => Number(value));
+  const values = parseInput(input, Number);
   for (let i = 0; i < values.length; i += 1) {
     for (let j = i + 1; j < values.length; j += 1) {
       for (let k = j + 1; k < values.length; k += 1) {
